@@ -2,6 +2,7 @@
 
 const app = window.app;
 const configDefaults = {
+  url: "mongodb://xxx.xxx.xxx",
   db: "xxxx",
   user: "xxxx",
   pwd: "123456",
