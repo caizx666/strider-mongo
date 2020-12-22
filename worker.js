@@ -1,6 +1,6 @@
 "use strict";
 
-const debug = require("debug")("strider-mongo:worker");
+const debug = console.log;
 const mongo = require("./lib/mongo-createuser");
 
 module.exports = {
