@@ -1,6 +1,6 @@
 {
   "name": "strider-mongo",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "description": "Plugin mongo for Strider CD",
   "homepage": "https://github.com/Strider-CD/strider-mongo",
   "main": "webapp.js",
