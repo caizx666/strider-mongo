@@ -1,0 +1,49 @@
+{
+  "name": "strider-mongo",
+  "version": "2.0.0",
+  "description": "Plugin mongo for Strider CD",
+  "homepage": "https://github.com/Strider-CD/strider-mongo",
+  "main": "webapp.js",
+  "scripts": {
+    "lint": "eslint *.js config lib",
+    "test": "set DEBUG=strider-mongo*,-not_this && mocha --recursive test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Strider-CD/strider-mongo.git"
+  },
+  "keywords": [
+    "strider",
+    "plugin",
+    "mongo"
+  ],
+  "engines": {
+    "node": ">=4.2"
+  },
+  "author": "Strider Continuous Deployment <hello@stridercd.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "debug": "^2.2.0",
+    "mongodb": "^3.6.3"
+  },
+  "strider": {
+    "type": "job",
+    "id": "mongo",
+    "title": "Mongo",
+    "worker": "worker.js",
+    "webapp": "webapp.js",
+    "icon": "icon.png",
+    "config": {
+      "controller": "MongoController"
+    }
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.1.1",
+    "istanbul": "^0.4.4",
+    "mocha": "^2.4.5",
+    "sinon": "^1.17.3",
+    "sinon-chai": "^2.8.0"
+  }
+}
