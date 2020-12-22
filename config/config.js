@@ -3,10 +3,7 @@
 const app = window.app;
 const configDefaults = {
   url: "mongodb://xxx.xxx.xxx",
-  db: "xxxx",
-  user: "xxxx",
-  pwd: "123456",
-  roles: ["readWrite"],
+  user: { db: "xxxx", name: "xxxx", pwd: "123456", roles: ["readWrite"] },
 };
 
 /*

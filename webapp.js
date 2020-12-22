@@ -7,10 +7,12 @@ module.exports = {
   config: {
     mongo: {
       url: { type: String },
-      db: { type: String },
-      name: { type: String },
-      pwd: { type: String },
-      roles: [String],
+      user: {
+        db: { type: String },
+        name: { type: String },
+        pwd: { type: String },
+        roles: [String],
+      },
     },
   },
 };
