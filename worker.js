@@ -33,12 +33,12 @@ module.exports = {
       //function style (calling done is a MUST)
       deploy: function (context, done) {
         //this will show up in the terminal log as 'info'
-        debug(config.mongo);
+        debug(config);
 
         mongo
           .createUser({
-            url: config.mongo,
-            user: JSON.parse(config.mongo.user),
+            ...config,
+            user: JSON.parse(config.user),
           })
           .then(() => {
             done(null, true);
