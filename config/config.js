@@ -3,10 +3,10 @@
 const app = window.app;
 const configDefaults = {
   url: "mongodb://xxx.xxx.xxx",
-    db: "xxxx",
-    user: "xxxx",
-    pwd: "123456",
-    roles: ["readWrite"]
+  db: "xxxx",
+  user: "xxxx",
+  pwd: "123456",
+  roles: ["readWrite"],
 };
 
 /*
@@ -19,6 +19,7 @@ app.controller("MongoController", [
 
     $scope.$watch("configs[branch.name].mongo.config", function (value) {
       $scope.config = value || configDefaults;
+    });
 
     $scope.save = function () {
       $scope.saving = true;
