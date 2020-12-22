@@ -36,7 +36,10 @@ module.exports = {
         debug(config.mongo);
 
         mongo
-          .createUser(config.mongo)
+          .createUser({
+            url: config.mongo,
+            user: JSON.parse(config.mongo.user),
+          })
           .then(() => {
             done(null, true);
           })
