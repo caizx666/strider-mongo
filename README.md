@@ -1,3 +1,3 @@
-# strider-kong
+# strider-mongo
 
-create kong api service and route
+create mongodb user if not exists
